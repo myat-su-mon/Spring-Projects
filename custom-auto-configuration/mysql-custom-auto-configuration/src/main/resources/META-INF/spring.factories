@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.solt.jdc.db.MySqlAutoConfiguration,\
+  com.solt.jdc.java.java8.Java8AutoConfiguration,\
+  com.solt.jdc.java.java11.Java11AutoConfiguration,\
+  com.solt.jdc.filestore.local.LocalFileStoreAutoConfiguration,\
+  com.solt.jdc.filestore.network.NetworkFileStoreAutoConfiguration

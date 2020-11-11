@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="214.0" y="226.0">demo.PdfReport</node>
+    <node x="0.0" y="226.0">demo.TextReport</node>
+    <node x="63.0" y="0.0">demo.AbstractReport</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="demo.PdfReport" target="demo.AbstractReport">
+      <point x="0.0" y="-52.0" />
+      <point x="311.0" y="201.0" />
+      <point x="274.5" y="201.0" />
+      <point x="70.5" y="88.0" />
+    </edge>
+    <edge source="demo.TextReport" target="demo.AbstractReport">
+      <point x="0.0" y="-52.0" />
+      <point x="97.0" y="201.0" />
+      <point x="133.5" y="201.0" />
+      <point x="-70.5" y="88.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="174.5" y="73.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        Your Todo List
+        <p th:if="${todoItems.isEmpty()}">No Tasks defined yet.</p>
+        <ul th:each="item: ${todoItems}">
+            <li th:text="${item.title}"></li>
+        </ul>
+
+        <form action="#" th:action="@{/add}" th:object="${todoItem}" method="post">
+            <p>Item: <input type="text", th:field="*{title}"></p>
+            <span th:if="${#fields.hasErrors(title)}" style="color: red" th:errors="*{title}"></span>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </form>
+    </div>
+
+</body>
+</html>
