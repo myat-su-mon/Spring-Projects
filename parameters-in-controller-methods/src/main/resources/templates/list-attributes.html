@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{layout :: layout(~{::main})}" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+    <main role="main">
+       <div class="album py-5 bg-light">
+           <div class="container">
+               <ul>
+                   <li>First Name = <span th:text="${firstName}"></span></li>
+                   <li>Last Name = <span th:text="${lastName}"></span></li>
+                   <li>City = <span th:text="${city}"></span></li>
+               </ul>
+           </div>
+       </div>
+    </main>
+</body>
+</html>

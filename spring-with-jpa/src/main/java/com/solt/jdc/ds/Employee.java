@@ -10,10 +10,10 @@ import javax.persistence.Id;
 import java.sql.Date;
 
 @Entity
-@AllArgsConstructor
 @Getter
 @Setter
 @ToString
+@AllArgsConstructor
 public class Employee {
 
     @Id

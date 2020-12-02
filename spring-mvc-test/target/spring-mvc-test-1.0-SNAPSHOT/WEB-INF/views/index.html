@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Home</title>
+</head>
+<body>
+    Hello From Index Controller and View <br/>
+    Please Visit one of the following sites: <br/>
+
+    <ul>
+        <li><a th:href="@{/add-numbers(numberA=2,numberB=4)}">/add-numbers?numberA=2&numberB=4</a></li>
+        <li><a th:href="@{/square-number(number=5)}">/square-number?number=5</a></li>
+    </ul>
+
+</body>
+</html>
