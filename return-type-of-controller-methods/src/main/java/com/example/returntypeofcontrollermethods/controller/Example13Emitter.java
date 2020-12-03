@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter;
+import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -19,6 +20,8 @@ public class Example13Emitter {
     @Autowired
     private TaskExecutor taskExecutor;
 
+    // curl http://localhost:8080/example13A
+    // curl -D - http://localhost:8080/example13A
     @GetMapping("/example13A")
     @ResponseBody
     public ResponseBodyEmitter example13A(){
@@ -26,8 +29,31 @@ public class Example13Emitter {
 
         CompletableFuture<Void> completableFuture = CompletableFuture.runAsync(()->{
             SleepUtil.sleep();
+            send(emitter, new Person("William", "Thomas"), MediaType.APPLICATION_JSON);
+        }).thenRunAsync(()->{
+            SleepUtil.sleep();
             send(emitter, new Person("John", "Doe"), MediaType.APPLICATION_JSON);
-        })
+        }).thenRun(emitter::complete);
+
+        taskExecutor.execute(completableFuture::join);
+        return emitter;
+    }
+
+    // curl http://localhost:8080/example13B
+    // curl -D - http://localhost:8080/example13B
+    @GetMapping("/example13B")
+    @ResponseBody
+    public SseEmitter example13B(){
+        SseEmitter emitter = new SseEmitter();
+        CompletableFuture<Void> completableFuture = CompletableFuture.runAsync(()->{
+            SleepUtil.sleep();
+            send(emitter, new Person("William", "Thomas"), MediaType.APPLICATION_JSON);
+        }).thenRunAsync(()->{
+            SleepUtil.sleep();
+            send(emitter, new Person("John", "Doe"), MediaType.APPLICATION_JSON);
+        }).thenRun(emitter::complete);
+        taskExecutor.execute(completableFuture::join);
+        return emitter;
     }
 
     @SneakyThrows

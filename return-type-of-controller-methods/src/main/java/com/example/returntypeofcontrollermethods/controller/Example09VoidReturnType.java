@@ -30,6 +30,6 @@ public class Example09VoidReturnType {
 
     @GetMapping("/example09D")
     public void example09D(OutputStream outputStream) throws IOException{
-        outputStream.write(Integer.parseInt("Response from Example09D"));
+        outputStream.write("Response from example 09D".getBytes());
     }
 }
