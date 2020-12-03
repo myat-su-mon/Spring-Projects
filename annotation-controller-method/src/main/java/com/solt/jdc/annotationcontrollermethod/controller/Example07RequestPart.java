@@ -18,31 +18,31 @@ import java.util.Optional;
 @Controller
 public class Example07RequestPart {
 
-    // curl -F 'person={"firstName":"John", "lastName":"Doe"}, type = application/json' -F 'country={"country":"Myanamar"}, type = application/json' http://localhost:8080/example07A
+    // curl -F 'person={"firstName":"John", "lastName":"Doe"};type = application/json' -F 'country={"country":"Myanamar"};type = application/json' http://localhost:8080/example07A
     @PostMapping("/example07A")
     @ResponseBody
     public String example07A(@RequestPart("person") String person, @RequestPart("country") String country){
         return String.format("Received person = [%s], country = [%s] \n", person, country);
     }
 
-    // curl -F 'person={"firstName":"John", "lastName":"Doe"}, type = application/json' -F 'country={"country":"Myanamar"}, type = application/json' http://localhost:8080/example07B
-    // curl -F 'person={"firstName":"John", "lastName":"Doe"}, type = application/json' http://localhost:8080/example07B
+    // curl -F 'person={"firstName":"John", "lastName":"Doe"}; type = application/json' -F 'country={"country":"Myanamar"}; type = application/json' http://localhost:8080/example07B
+    // curl -F 'person={"firstName":"John", "lastName":"Doe"}; type = application/json' http://localhost:8080/example07B
     @PostMapping("/example07B")
     @ResponseBody
     public String example07B(@RequestPart("person") Person person, @RequestPart(value = "country", required = false) Country country){
         return String.format("Received person = [%s], country = [%s] \n", person, country);
     }
 
-    // curl -F 'person={"firstName":"John", "lastName":"Doe"}, type = application/json' -F 'country={"country":"Myanamar"}, type = application/json' http://localhost:8080/example07C
-    // curl -F 'person={"firstName":"John", "lastName":"Doe"}, type = application/json' http://localhost:8080/example07C
+    // curl -F 'person={"firstName":"John", "lastName":"Doe"}; type = application/json' -F 'country={"country":"Myanamar"}; type = application/json' http://localhost:8080/example07C
+    // curl -F 'person={"firstName":"John", "lastName":"Doe"}; type = application/json' http://localhost:8080/example07C
     @PostMapping("/example07C")
     @ResponseBody
     public String example07C(@RequestPart("person") Person person, @RequestPart(value = "country") Optional<Country> country){
         return String.format("Received person = [%s], country = [%s] \n", person, country.orElse(new Country()));
     }
 
-    // curl -F 'person={"firstName":"John", "lastName":"Doe"}, type = application/json' -F 'country={"country":"Myanamar"}, type = application/json' http://localhost:8080/example07D
-    // curl -F 'person={"firstName":"John", "lastName":"Doe"}, type = application/json' -F 'country={"country":"Myanamar"}, type = application/json' http://localhost:8080/example07D
+    // curl -F 'person={"firstName":"John", "lastName":"Doe"}; type = application/json' -F 'country={"country":"Myanamar"}; type = application/json' http://localhost:8080/example07D
+    // curl -F 'person={"firstName":"John", "lastName":"Doe"}; type = application/json' -F 'country={"country":"Myanamar"}; type = application/json' http://localhost:8080/example07D
     @PostMapping("/example07D")
     @ResponseBody
     public String example07D(@RequestPart("person") @Valid Person person, BindingResult bindingResult){
@@ -63,9 +63,9 @@ public class Example07RequestPart {
     }
 
     @PostMapping("/example07E/gallery")
-    public String example07Eupload(@RequestPart("file")MultipartFile file) throws IOException {
+    public String example07EUpload(@RequestPart("file")MultipartFile file) throws IOException {
         inMemoryStorage.store(file.getOriginalFilename(), file.getBytes());
-        return "redirect:/example07E/gallery/";
+        return "redirect:/example07E/gallery";
     }
 
     @Autowired

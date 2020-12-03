@@ -11,6 +11,7 @@ import java.util.Map;
 @Controller
 public class Example06Model {
 
+    // curl -d '{"firstName":"John", "lastName":"Doe"}' -H 'Content-Type: application/json' http://localhost:8080/example06A
     @GetMapping("example06A")
     public Model example06A(){
         Model model = new BindingAwareModelMap();

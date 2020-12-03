@@ -13,21 +13,21 @@ import java.util.Optional;
 @Controller
 public class Example06RequestBody {
 
-    // curl -d '{"firstName":"John", "lastName":"Doe"} -H 'Content-Type: application/json' http://localhost:8080/example06A
+    // curl -d '{"firstName":"John", "lastName":"Doe"}' -H 'Content-Type: application/json' http://localhost:8080/example06A
     @PostMapping("/example06A")
     @ResponseBody
     public String example06A(@RequestBody String body) {
         return String.format("Received body = [%s]\n", body);
     }
 
-    // curl -d '{"firstName":"John", "lastName":"Doe"} -H 'Content-Type: application/json' http://localhost:8080/example06B
+    // curl -d '{"firstName":"John", "lastName":"Doe"}' -H 'Content-Type: application/json' http://localhost:8080/example06B
     @PostMapping("/example06B")
     @ResponseBody
     public String example06B(@RequestBody Person person) {
         return String.format("Received body = [%s]\n", person);
     }
 
-    // curl -d '{"firstName":"John", "lastName":"Doe"} -H 'Content-Type: application/json' http://localhost:8080/example06C
+    // curl -d '{"firstName":"John", "lastName":"Doe"}' -H 'Content-Type: application/json' http://localhost:8080/example06C
     // curl -X POST -H 'Content-Type: application/json' http://localhost:8080/example06C
     @PostMapping("/example06C")
     @ResponseBody
@@ -35,7 +35,7 @@ public class Example06RequestBody {
         return String.format("Received body = [%s]\n", person);
     }
 
-    // curl -d '{"firstName":"John", "lastName":"Doe"} -H 'Content-Type: application/json' http://localhost:8080/example06D
+    // curl -d '{"firstName":"John", "lastName":"Doe"}' -H 'Content-Type: application/json' http://localhost:8080/example06D
     // curl -X POST -H 'Content-Type: application/json' http://localhost:8080/example06D
     @PostMapping("/example06D")
     @ResponseBody
@@ -43,8 +43,8 @@ public class Example06RequestBody {
         return String.format("Received body = [%s]\n", person.orElse(new Person()));
     }
 
-    // curl -d '{"firstName":"John1", "lastName":"Doe1"} -H 'Content-Type: application/json' http://localhost:8080/example06E
-    // curl -d '{"firstName":"John1", "lastName":"Doe1"} -H 'Content-Type: application/json' http://localhost:8080/example06E
+    // curl -d '{"firstName":"John1", "lastName":"Doe1"}' -H 'Content-Type: application/json' http://localhost:8080/example06E
+    // curl -d '{"firstName":"John1", "lastName":"Doe1"}' -H 'Content-Type: application/json' http://localhost:8080/example06E
     @PostMapping("/example06E")
     @ResponseBody
     public String example06E(@RequestBody @Valid Person person, BindingResult bindingResult) {
