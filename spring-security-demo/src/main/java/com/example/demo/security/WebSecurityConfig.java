@@ -22,7 +22,24 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        super.configure(http);
+        http
+                .authorizeRequests()
+                .expressionHandler(expressionHandler())
+                .mvcMatchers("/", "/home").permitAll()
+                .mvcMatchers("/employees").hasRole(EMPLOYEES_PAG_VIEW)
+                .mvcMatchers("/departments").hasRole(DEPARTMENTS_PAG_VIEW)
+                .mvcMatchers("/customers").hasRole(CUSTOMERS_PAG_VIEW)
+                .anyRequest().authenticated()
+                .and()
+                .formLogin()
+                .loginPage("/login")
+                .failureUrl("/login-error")
+                .permitAll()
+                .and()
+                .logout()
+                .logoutUrl("/logout")
+                .logoutSuccessUrl("/login")
+                .permitAll();
     }
 
     @Override
@@ -50,7 +67,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .roles();
     }
 
-    private DefaultWebSecurityExpressionHandler defaultWebSecurityExpressionHandler(){
+    private DefaultWebSecurityExpressionHandler expressionHandler(){
         DefaultWebSecurityExpressionHandler expressionHandler = new DefaultWebSecurityExpressionHandler();
         expressionHandler.setRoleHierarchy(roleHierarchy);
         return expressionHandler;
