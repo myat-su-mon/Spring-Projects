@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="152a1751-7ef0-455e-a4bb-6bd8a842abf2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../csrf--demo2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf--demo2/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf--demo2/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf--demo2/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf--demo2/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf--demo2/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf--demo2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf--demo2/src/main/java/com/example/csrfdemo2/CsrfDemo2Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf--demo2/src/main/java/com/example/csrfdemo2/config/ProjectConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf--demo2/src/main/java/com/example/csrfdemo2/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf--demo2/src/main/java/com/example/csrfdemo2/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf--demo2/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf--demo2/src/main/resources/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf--demo2/src/test/java/com/example/csrfdemo2/CsrfDemo2ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf-demo1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf-demo1/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf-demo1/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf-demo1/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf-demo1/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf-demo1/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf-demo1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf-demo1/src/main/java/com/example/csrfdemo1/CsrfDemo1Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf-demo1/src/main/java/com/example/csrfdemo1/config/ProjectConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf-demo1/src/main/java/com/example/csrfdemo1/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf-demo1/src/main/java/com/example/csrfdemo1/filters/CsrfTokenLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf-demo1/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csrf-demo1/src/test/java/com/example/csrfdemo1/CsrfDemo1ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/customer-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/customer-create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/customers.html" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/customers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/department-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/department-create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/departments.html" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/departments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/employee-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/employee-create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/employees.html" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/employees.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/fragments/account-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/fragments/account-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/fragments/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/fragments/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/fragments/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/fragments/navigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-demo/src/main/resources/templates/login.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1lVPhLvPtZJGVIilkXFUzubV0T6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringSecurityDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="spring-security-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.springsecuritydemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springsecuritydemo.SpringSecurityDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SpringSecurityDemoApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="152a1751-7ef0-455e-a4bb-6bd8a842abf2" name="Default Changelist" comment="" />
+      <created>1607679404589</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607679404589</updated>
+      <workItem from="1607679405991" duration="527000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
